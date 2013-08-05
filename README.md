@@ -12,11 +12,11 @@ In [lab #1](/labs/lab_1/README.md), you'll be installing the Android SDK, downlo
 
 ### Lab #2
 
-Blah
+In [lab #2](#how-to-import-a-lab-into-eclipse), 
 
 ### Lab #3
 
-Blah
+In [lab #3](#how-to-import-a-lab-into-eclipse), 
 
 ## Helpful Resources
   
