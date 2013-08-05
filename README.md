@@ -6,6 +6,16 @@ Wanna build a native Android app, but aren't sure where to begin? No problem, I'
 
 You'll need to [download the Android SDK](http://developer.android.com/sdk/index.html) for your platform (i.e. OSX, Windows, etc). Included in the SDK is a version of Eclipse containing the Android Development Toolkit (or ADT), which you can use for this workshop.
 
+Once you've installed the SDK, you've not quite done yet -- you'll need to fire up the SDK Manager. You can do this via the command line. For example, open up a terminal, change directories to where you installed the SDK and type:
+
+```
+/Development/tools/android/android-sdk-mac_x86/tools$>./android
+```
+
+This'll bring up a dialog that allows you to install various versions of Android as well emulators.
+
+![Android SDK Manager](http://www.ibm.com/developerworks/java/library/j-mobileforthemasses1/mobile-for-the-masses-fig1.jpg)
+
 
 ## Helpful Resources
   
@@ -19,16 +29,16 @@ You'll need to [download the Android SDK](http://developer.android.com/sdk/index
 
 ## How to import a lab into Eclipse
 
-![Alt text](/docs/imgs/step1.png?raw=true)
+![Importing a project](/docs/imgs/step1.png?raw=true)
 
 blah
 
-![Alt text](/docs/imgs/step2.png?raw=true)
+![Select Existing Android code](/docs/imgs/step2.png?raw=true)
 
 blah
 
-![Alt text](/docs/imgs/step3.png?raw=true)
+![Find each lab in the labs directory](/docs/imgs/step3.png?raw=true)
 
 blah
 
-![Alt text](/docs/imgs/step4.png?raw=true)
+![You should see a project named wordz](/docs/imgs/step4.png?raw=true)
