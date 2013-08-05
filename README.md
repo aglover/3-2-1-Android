@@ -25,7 +25,7 @@ First, select __File__ and then __Import__.
 
 ![Importing a project](/docs/imgs/step1.png?raw=true)
 
-Next, select the Existing Android Code Into Workspace option in the Android folder.
+Next, select the __Existing Android Code Into Workspace__ option in the Android folder.
 
 ![Select Existing Android code](/docs/imgs/step2.png?raw=true)
 
@@ -33,7 +33,7 @@ You will need to find the directory where you cloned or unzipped/untarred this p
 
 ![Find each lab in the labs directory](/docs/imgs/step3.png?raw=true)
 
-Finally, you should see a dialog that lists one or more projects (depending on which option you selected previously) -- hit the Finish button and you should be good to go!
+Finally, you should see a dialog that lists one or more projects (depending on which option you selected previously) -- hit the __Finish__ button and you should be good to go!
 
 ![You should see a project named wordz](/docs/imgs/step4.png?raw=true)
 
