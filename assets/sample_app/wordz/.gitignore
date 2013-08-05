@@ -1,0 +1,6 @@
+.classpath
+.project
+bin/
+.settings/
+.DS_Store
+lint.xml
