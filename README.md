@@ -12,11 +12,11 @@ In [lab #1](/labs/lab_1/README.md), you'll be installing the Android SDK, downlo
 
 ### Lab #2
 
-In [lab #2](#how-to-import-a-lab-into-eclipse), 
+In lab #2, you'll learn about Layouts, Activities, and Gestures. You will need to [import lab #2 into Eclipse](#how-to-import-a-lab-into-eclipse). 
 
 ### Lab #3
 
-In [lab #3](#how-to-import-a-lab-into-eclipse), 
+In lab #3, you learn about building Android apps, signing them for distribution, and deploying them to devices. You will need to [import lab #3 into Eclipse](#how-to-import-a-lab-into-eclipse).
 
 ## Helpful Resources
   
