@@ -2,7 +2,21 @@
 
 Wanna build a native Android app, but aren't sure where to begin? No problem, I've got you covered! In this workshop, I'll get you up and running with a simple Android app and in the process you'll learn the basics of Android development. You'll learn how to define views and the activities behind them, how to implement gestures, icons, menus and more! You'll leave the session with enough Android development experience that'll enable you to create the next killer app! 
 
-## 
+## Let's get started! 
+
+This workshop is organized into 3 labs. We don't have a lot of time, so I strongly suggest you pair with someone. People with OSX, please volunteer to be pairing partners as it'll reduce friction because I'm also on OSX. That is, if you have Windows or Linux and someone near you is on a MacBook, then you should probably ask to pair with that person as my directions are tailored to OSX. 
+
+### Lab #1
+
+In [lab #1](/labs/lab_1/README.md), you'll be installing the Android SDK, downloading some API versions, creating an emulator, and finally building an App. 
+
+### Lab #2
+
+Blah
+
+### Lab #3
+
+Blah
 
 ## Helpful Resources
   
