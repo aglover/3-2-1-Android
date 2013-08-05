@@ -16,6 +16,9 @@ This'll bring up a dialog that allows you to install various versions of Android
 
 ![Android SDK Manager](http://www.ibm.com/developerworks/java/library/j-mobileforthemasses1/mobile-for-the-masses-fig1.jpg)
 
+Next, you'll need to download a few things: namely, Tools (if there is an updated version of it), Android 4.2 (API 17), Android 4.0 (API 14) and Android 2.3 (API 10). You are free to download more API versions, but for now, all labs will assume at least API 10. 
+
+![Android downloads](http://www.ibm.com/developerworks/java/library/j-mobileforthemasses1/mobile-for-the-masses-fig2.jpg)
 
 ## Helpful Resources
   
@@ -25,6 +28,9 @@ This'll bring up a dialog that allows you to install various versions of Android
     * [Activities and icons in your Android application lifecycle](http://www.ibm.com/developerworks/java/library/j-mobileforthemasses3/index.html)
     * [Words and gestures with Overheard Word](http://www.ibm.com/developerworks/java/library/j-mobileforthemasses4/index.html)
   * [developer.android.com](http://developer.android.com/index.html)
+  * [Building your first app](http://developer.android.com/training/basics/firstapp/index.html) from the folks at developer.android.com
+  * [Getting started](http://developer.android.com/training/index.html) with Android (also from the good folks at developer.android.com)
+  * [Android Development Tutorial](http://www.vogella.com/articles/Android/article.html) from vogella.com -- an excellent resource that I use from time to time
 
 
 ## How to import a lab into Eclipse
