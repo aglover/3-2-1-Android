@@ -50,6 +50,11 @@ The dialog that pops up is quite important so follow these steps closely:
   1. Keep the defaults in the Configure Launcher Icon dialog and click __Next__.
   1. Also, keep the defaults in the Create Activity dialog and in the final dialog, which is used to select your application's activity. Click __Finish__.
 
+The resultant App is capable of being run on the emulator you defined earlier. To run it, simply right click on your newly created project within Eclipse and select the __Run As__ option, followed by __Android Application__. 
+
+![Hello world](/docs/imgs/helloworldapp.png?raw=true)
+
+If everything worked, you should be see the world's greatest app! And that's it, you're finished with lab #1. 
 
 
 
