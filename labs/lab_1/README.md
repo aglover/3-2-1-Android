@@ -45,10 +45,10 @@ To create the world's simplest app, from within Eclipse, select __File__ then __
 ![Creating a new Android project](http://www.ibm.com/developerworks/java/library/j-mobileforthemasses1/mobile-for-the-masses-fig7.jpg)
 
 The dialog that pops up is quite important so follow these steps closely: 
-  1 In the Target SDK drop-down list, select API 17: Android 4.2 (Jelly Bean), then click __Next__.
-  1 In the next dialog, keep the default settings, although you can place the resulting code in any location. Click __Next__.
-  1 Keep the defaults in the Configure Launcher Icon dialog and click __Next__.
-  1 Also, keep the defaults in the Create Activity dialog and in the final dialog, which is used to select your application's activity. Click __Finish__.
+  1. In the Target SDK drop-down list, select API 17: Android 4.2 (Jelly Bean), then click __Next__.
+  1. In the next dialog, keep the default settings, although you can place the resulting code in any location. Click __Next__.
+  1. Keep the defaults in the Configure Launcher Icon dialog and click __Next__.
+  1. Also, keep the defaults in the Create Activity dialog and in the final dialog, which is used to select your application's activity. Click __Finish__.
 
 
 
