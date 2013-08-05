@@ -6,7 +6,7 @@ Before you can start rockin' it with Android, you'll need to install the SDK, do
 
 You'll need to [download the Android SDK](http://developer.android.com/sdk/index.html) for your platform (i.e. OSX, Windows, etc). Included in the SDK is a version of Eclipse containing the Android Development Toolkit (or ADT), which you can use for this workshop.
 
-Once you've installed the SDK, you've not quite done yet -- you'll need to fire up the SDK Manager. You can do this via the command line. For example, open up a terminal, change directories to where you installed the SDK and type:
+Once you've installed the SDK, you've not quite done yet -- you'll need to fire up the SDK Manager. You can do this via the command line. For example, open up a terminal, change directories to where you installed the SDK, go into the tools directory, and type:
 
 ```
 /Development/tools/android/android-sdk-mac_x86/tools$>./android
@@ -24,12 +24,12 @@ Next, you'll need to download a few things: namely, Tools (if there is an update
 
 Emulators must target a particular version of Android, so you'll need to at least create an emulator instance that runs Android 4.2.
 
-Start your SDK Manager again if you closed it. If the Android SDK tools or platform tools were updated, restart the SDK Manager. In the top-level menu of the SDK Manager, select Tools the Manage AVDs to open a new dialog for the Android Virtual Device Manager.
+Start your SDK Manager again if you closed it. If the Android SDK tools or platform tools were updated, restart the SDK Manager. In the top-level menu of the SDK Manager, select __Tools__ then __Manage AVDs__ to open a new dialog for the Android Virtual Device Manager.
 
 ![Android Virtual Device Manager](http://www.ibm.com/developerworks/java/library/j-mobileforthemasses1/mobile-for-the-masses-fig3.jpg)
 
-Click New to open the Create a new Android Virtual Device (AVD) dialog in which you can define an emulator. In the Target drop-down list, select Android version 4.2. In the AVD Name field, give your emulator a name. I usually name my emulators for the API version they target. This name is also how you fire up emulators from the command line or how you select them from a list in Eclipse.
+Click __New__ to open the Create a new Android Virtual Device (AVD) dialog in which you can define an emulator. In the Target drop-down list, select Android version 4.2. In the AVD Name field, give your emulator a name. I usually name my emulators for the API version they target. This name is also how you fire up emulators from the command line or how you select them from a list in Eclipse.
 
 ![Creating a new Android virtual Device](http://www.ibm.com/developerworks/java/library/j-mobileforthemasses1/mobile-for-the-masses-fig4.jpg)
 
-Click OK to see your new virtual device that is listed in the AVD dialog. Select it and click Start to open another dialog with launch options. For now, keep the defaults and click Launch. 
+Click __OK__ to see your new virtual device that is listed in the AVD dialog. Select it and click __Start__ to open another dialog with launch options. For now, keep the defaults and click __Launch__. 
