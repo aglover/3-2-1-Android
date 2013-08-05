@@ -4,11 +4,12 @@ Wanna build a native Android app, but aren't sure where to begin? No problem, I'
 
 
 ## Helpful Resources
-
-  * [Mobile for the masses: A gentle introduction to Android](http://www.ibm.com/developerworks/java/library/j-mobileforthemasses1/index.html)
-  * [Mobile for the masses: Take a swipe at it! Programming gestures in Android](http://www.ibm.com/developerworks/java/library/j-mobileforthemasses2/index.html)
-  * [Mobile for the masses: Activities and icons in your Android application lifecycle](http://www.ibm.com/developerworks/java/library/j-mobileforthemasses3/index.html)
-  * [Mobile for the masses: Words and gestures with Overheard Word](http://www.ibm.com/developerworks/java/library/j-mobileforthemasses4/index.html)
+  
+  * Mobile for the masses series:
+    * [Mobile for the masses: A gentle introduction to Android](http://www.ibm.com/developerworks/java/library/j-mobileforthemasses1/index.html)
+    * [Mobile for the masses: Take a swipe at it! Programming gestures in Android](http://www.ibm.com/developerworks/java/library/j-mobileforthemasses2/index.html)
+    * [Mobile for the masses: Activities and icons in your Android application lifecycle](http://www.ibm.com/developerworks/java/library/j-mobileforthemasses3/index.html)
+    * [Mobile for the masses: Words and gestures with Overheard Word](http://www.ibm.com/developerworks/java/library/j-mobileforthemasses4/index.html)
 
 
 ## How to import a lab into Eclipse
