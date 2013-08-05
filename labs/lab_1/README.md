@@ -2,6 +2,8 @@
 
 Before you can start rockin' it with Android, you'll need to install the SDK, download some API versions, and create at least one emulator instance. 
 
+Once you've done that, you can then create an app. In lab #1, we'll create everyone's favorite app: Hello World! 
+
 ## Installing the SDK and downloading required APIs
 
 You'll need to [download the Android SDK](http://developer.android.com/sdk/index.html) for your platform (i.e. OSX, Windows, etc). Included in the SDK is a version of Eclipse containing the Android Development Toolkit (or ADT), which you can use for this workshop.
@@ -33,3 +35,24 @@ Click __New__ to open the Create a new Android Virtual Device (AVD) dialog in wh
 ![Creating a new Android virtual Device](http://www.ibm.com/developerworks/java/library/j-mobileforthemasses1/mobile-for-the-masses-fig4.jpg)
 
 Click __OK__ to see your new virtual device that is listed in the AVD dialog. Select it and click __Start__ to open another dialog with launch options. For now, keep the defaults and click __Launch__. 
+
+### Hello World!
+
+These steps assume you are using the Eclipse instance that comes bundled with the Android SDK Download. If you are using a different Eclipse instance (such as one you've previously installed) you will need to install the [Eclipse ADT Bundle](http://developer.android.com/sdk/installing/bundle.html).
+
+To create the world's simplest app, from within Eclipse, select __File__ then __New__ and then select the __Android Application Project__ option.
+
+![Creating a new Android project](http://www.ibm.com/developerworks/java/library/j-mobileforthemasses1/mobile-for-the-masses-fig7.jpg)
+
+The dialog that pops up is quite important so follow these steps closely: 
+  1 In the Target SDK drop-down list, select API 17: Android 4.2 (Jelly Bean), then click __Next__.
+  1 In the next dialog, keep the default settings, although you can place the resulting code in any location. Click __Next__.
+  1 Keep the defaults in the Configure Launcher Icon dialog and click __Next__.
+  1 Also, keep the defaults in the Create Activity dialog and in the final dialog, which is used to select your application's activity. Click __Finish__.
+
+
+
+
+
+
+
