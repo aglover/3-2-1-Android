@@ -16,7 +16,7 @@ In [lab #2](/labs/lab_2/README.md), you'll learn about Layouts, Activities, and 
 
 ### Lab #3
 
-In lab #3, you learn about building Android apps, signing them for distribution, and deploying them to devices. You will need to [import lab #3 into Eclipse](#how-to-import-a-lab-into-eclipse).
+In [lab #3](/labs/lab_3/README.md), you learn about building Android apps, signing them for distribution, and deploying them to devices. You will need to [import lab #3 into Eclipse](#how-to-import-a-lab-into-eclipse).
 
 ## Helpful Resources
   
