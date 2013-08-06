@@ -11,27 +11,30 @@ import java.util.Locale;
 import org.json.JSONArray;
 import org.json.JSONObject;
 
-import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
+import android.os.Handler;
 import android.util.Log;
 import android.view.GestureDetector;
 import android.view.GestureDetector.SimpleOnGestureListener;
+import android.view.Gravity;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.MotionEvent;
 import android.view.View;
 import android.view.View.OnClickListener;
+import android.widget.ImageView;
+import android.widget.LinearLayout;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.b50.gesticulate.SwipeDetector;
 import com.b50.savvywords.Definition;
 import com.b50.savvywords.Word;
 import com.b50.savvywords.WordStudyEngine;
 
-public class OverheardWord extends Activity {
+public class OverheardWord extends DefaultActivity {
 
-	private static final String APP = "overheardword";
 	private GestureDetector gestureDetector;
 	private static WordStudyEngine engine;
 	private static LinkedList<Word> wordsViewed;
@@ -42,14 +45,30 @@ public class OverheardWord extends Activity {
 		super.onCreate(savedInstanceState);
 
 		Log.d(APP, "onCreated Invoked");
-
-		setContentView(R.layout.activity_overheard_word);
-
-		initializeGestures();
-		initalizeEngineAndViewedWords();
-		displayInitialWord();
+		/**
+		 * Hint: this layout can be found in the res/layout directory.
+		 * Does it do anything? This is supposed to be a study-like
+		 * activity. 
+		 */
+		setContentView(R.layout.nothing);
+		/**
+		 * Next, follow the steps & fill in the missing
+		 * methods
+		 */
+		//Step 1: initialize gestures
+				
+		//Step 2: initialize engine instances + viewed words
+		
+		//Step 3: display the initial word
+		
+		//remove this when you've done something
+		this.scheduleHintToast();
 	}
-
+	
+	/**
+	 * Hint: this needs to be done first (i.e. this is step #1!)
+	 */
+	@SuppressWarnings("unused")
 	private void initializeGestures() {
 		gestureDetector = initGestureDetector();
 
@@ -66,21 +85,62 @@ public class OverheardWord extends Activity {
 			}
 		});
 	}
+	
+	/**
+	 * This is step #2
+	 * Ponder this: why are engine & wordsViewed static?	  
+	 */
+	@SuppressWarnings("unused")
+	private void initializeEngineAndViewedWords() {
+		List<Word> words = buildWordList();
+		if (engine == null) {
+			engine = WordStudyEngine.getInstance(words);
+		}
 
+		if (wordsViewed == null) {
+			wordsViewed = new LinkedList<Word>();
+		}
+	}
+	
+	/**
+	 * This is step #3
+	 * Further thoughts: what does displayWord do? Hint, go see it! 
+	 */
+	@SuppressWarnings("unused")
+	private void displayInitialWord() {
+		Word firstWord = engine.getWord();
+		wordsViewed.add(firstWord);
+		viewPosition++;
+		displayWord(firstWord);
+	}
+	
+	/**
+	 * By default, this code doesn't do anything other than detect a swipe. 
+	 * Can you make it do something interesting? 
+	 * 
+	 * HINT: this method creates an anonymous class; take a look at the 
+	 * methods within it. 
+	 * 
+	 * @return initialized GestureDetector instance
+	 */
 	private GestureDetector initGestureDetector() {
 		return new GestureDetector(new SimpleOnGestureListener() {
-
+			/**
+			 * Your job: handle the swipes! If a user swipes to the left, for example,
+			 * don't they want to see the next word? And if they swipe right, wouldn't 
+			 * they expect to see the previous word?
+			 */
 			public boolean onFling(MotionEvent e1, MotionEvent e2, float velocityX, float velocityY) {
 				try {
 					final SwipeDetector detector = new SwipeDetector(e1, e2, velocityX, velocityY);
 					if (detector.isDownSwipe()) {
-						return doNothing();
+						return false;
 					} else if (detector.isUpSwipe()) {
-						return startQuiz();
+						return false;
 					} else if (detector.isLeftSwipe()) {
-						return showNextWord();
+						return false;
 					} else if (detector.isRightSwipe()) {
-						return showPreviousWord();
+						return false;
 					}
 				} catch (Exception e) {
 					// nothing
@@ -88,6 +148,7 @@ public class OverheardWord extends Activity {
 				return doNothing();
 			}
 
+			@SuppressWarnings("unused")
 			private boolean showPreviousWord() {
 				if (wordsViewed.size() > 0 && (listSizeAndPositionEql() || (viewPosition >= 0))) {
 					displayWord(wordsViewed.get(--viewPosition));
@@ -96,7 +157,8 @@ public class OverheardWord extends Activity {
 					return doNothing();
 				}
 			}
-
+			
+			@SuppressWarnings("unused")
 			private boolean showNextWord() {
 				if (listSizeAndPositionEql()) {
 					viewPosition++;
@@ -119,6 +181,7 @@ public class OverheardWord extends Activity {
 				return false;
 			}
 
+			@SuppressWarnings("unused")
 			private boolean startQuiz() {
 				startActivity(new Intent(getApplicationContext(), OverheardQuiz.class));
 				return true;
@@ -141,64 +204,6 @@ public class OverheardWord extends Activity {
 		default:
 			return super.onOptionsItemSelected(item);
 		}
-	}
-
-	@Override
-	protected void onResume() {
-		super.onResume();
-		Log.d(APP, "onResume Invoked");
-	}
-
-	@Override
-	protected void onStart() {
-		super.onStart();
-		Log.d(APP, "onStart Invoked");
-	}
-
-	@Override
-	protected void onPause() {
-		super.onPause();
-		Log.d(APP, "onPause Invoked");
-	}
-
-	@Override
-	protected void onRestart() {
-		super.onRestart();
-		Log.d(APP, "onRestart Invoked");
-	}
-
-	@Override
-	protected void onStop() {
-		super.onStop();
-		Log.d(APP, "onStop Invoked");
-	}
-
-	@Override
-	protected void onDestroy() {
-		super.onDestroy();
-		Log.d(APP, "onDestroy Invoked");
-	}
-
-	private boolean listSizeAndPositionEql() {
-		return wordsViewed.size() == (viewPosition + 1);
-	}
-	
-	private void initalizeEngineAndViewedWords() {
-		List<Word> words = buildWordList();
-		if (engine == null) {
-			engine = WordStudyEngine.getInstance(words);
-		}
-
-		if (wordsViewed == null) {
-			wordsViewed = new LinkedList<Word>();
-		}
-	}
-	
-	private void displayInitialWord() {
-		Word firstWord = engine.getWord();
-		wordsViewed.add(firstWord);
-		viewPosition++;
-		displayWord(firstWord);
 	}
 	
 	private void displayWord(Word aWord) {
@@ -250,6 +255,27 @@ public class OverheardWord extends Activity {
 			Log.e(APP, "Exception in getInstance for WordEngine: " + e.getLocalizedMessage());
 		}
 		return words;
+	}
+	
+	private boolean listSizeAndPositionEql() {
+		return wordsViewed.size() == (viewPosition + 1);
+	}
+	
+	private void scheduleHintToast() {
+		final Handler handler = new Handler();
+		handler.postDelayed(new Runnable() {
+			public void run() {
+				// now quickly show a how to
+				final Toast toast = Toast.makeText(getApplicationContext(),
+						"Make this app do something! Select the correct layout and add swipe behavior.", Toast.LENGTH_LONG);
+				toast.setGravity(Gravity.CENTER, 0, 0);
+				final LinearLayout toastView = (LinearLayout) toast.getView();
+				final ImageView imageCodeProject = new ImageView(getApplicationContext());
+				imageCodeProject.setImageResource(R.drawable.warningw);
+				toastView.addView(imageCodeProject, 0);
+				toast.show();
+			}
+		}, 1500);
 	}
 
 }
